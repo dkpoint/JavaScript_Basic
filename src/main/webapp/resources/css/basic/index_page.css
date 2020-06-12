@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+	/* Canyon Clay = R.G.B(206,133,121) */
+	/* Old Rose = R.G.B(179,123,119) */
+	/* Serenity = R.G.B(145,167,206) */
+	/* Classic Blue = R.G.B(58,84,131) */
+	background-color : rgb(58,84,131);
+}
+
+h1{	
+	/* Arctic Ice = R.G.B(190,198,212) */
+	/* Cloud Dancer = R.G.B(239,238,233) */
+	/* Coconut Milk = R.G.B(239,236,229) */
+	color: rgb(239,236,229);	
+}
