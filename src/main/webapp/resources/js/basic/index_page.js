@@ -126,7 +126,9 @@ console.log(document);
 const title = document.getElementById("title");
 console.log(title);
 title.innerHTML = "Change the text of the id = title";
-title.style.color = "pink";
+// 주석 지워서 실행
+title.style.color = "rgb(239, 236, 229)";
+
 
 console.dir(document);
 
@@ -147,8 +149,8 @@ window.addEventListener("resize", handleResize);
 function handleClick() {
 	title.style.color = "red";
 }
-
-title.addEventListener("click", handleClick);
+//주석 지워서 실행
+// title.addEventListener("click", handleClick);
 
 /* 조건문 */
 // 조건문 구조
@@ -217,5 +219,65 @@ if(age >= 19 && age <= 21){
 	console.log("too young so you can not drink")
 }
 
-// 2-6 
+/* DOM If else Function practice */
+const idTitle = document.querySelector("#title");
 
+const BASE_COLOR = "rgb(239, 236, 229)";
+const OTHER_COLOR = "rgb(206, 133, 121)"
+
+function handleClick(){
+	
+	const currentColor = idTitle.style.color;
+
+	if (currentColor === BASE_COLOR){
+		idTitle.style.color = OTHER_COLOR;
+	} else {
+		idTitle.style.color = BASE_COLOR;
+	}
+}
+
+function init(){
+	idTitle.style.color = BASE_COLOR;
+	idTitle.addEventListener("click", handleClick);
+}
+// 주석 지워서 실행
+// init();
+
+// Network Event
+function checkNetworkOnLine(){
+	// 인터넷 연결이 끊기면 실행
+	console.log("인터넷 연결을 확인해주세요.");
+}
+
+window.addEventListener("offline", checkNetworkOnLine);
+
+// CSS File의 Class를  toggle로 처리
+const title02 = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick_ver02(){
+	
+	// 스타일 컬러 초기화
+	title02.style.color = "";
+	
+	/* toggle의 과정을 이해
+	// 클래스 목록에서 클래스 존재 확인
+	const hasClass = title.classList.contains(CLICKED_CLASS);
+	
+	if(!hasClass){
+		title02.classList.add(CLICKED_CLASS);
+	} else {
+		title02.classList.remove(CLICKED_CLASS);
+	}
+	*/
+	
+	title.classList.toggle(CLICKED_CLASS);
+	
+}
+
+function init_ver02(){
+	title02.addEventListener("click", handleClick_ver02)
+}
+
+init_ver02();

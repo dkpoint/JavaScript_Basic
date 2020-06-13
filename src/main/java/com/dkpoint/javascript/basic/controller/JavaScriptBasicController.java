@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/basic/*")
 public class JavaScriptBasicController {
 
-	// http://localhost:8181/javascript/basic/basic01_page.do
+	// http://localhost:8181/javascript/basic/index_page.do
 	@RequestMapping("/index_page.do")
 	public String indexPage() {
 		System.out.println("index_page");
@@ -15,12 +15,12 @@ public class JavaScriptBasicController {
 		return "basic/index_page";
 	}
 	
-	// http://localhost:8181/javascript/basic/basic01_page.do
-	@RequestMapping("/basic01_page.do")
-	public String ajax01Page() {
-		System.out.println("basic01_page");
+	// http://localhost:8181/javascript/basic/clock_page.do
+	@RequestMapping("/clock_page.do")
+	public String clockPage() {
+		System.out.println("clock_page");
 		
-		return "basic/basic01_page";
+		return "basic/clock_page";
 	}
 	
 }
