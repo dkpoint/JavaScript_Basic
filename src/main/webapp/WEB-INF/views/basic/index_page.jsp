@@ -10,6 +10,7 @@
 </head>
 <body>
 	<h1 id="title">Hello World!</h1>
+	<!-- JS File -->
 	<script src="${pageContext.request.contextPath}/resources/js/basic/index_page.js"></script>
 </body>
 </html>
