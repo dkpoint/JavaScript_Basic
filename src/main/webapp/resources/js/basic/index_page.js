@@ -126,13 +126,8 @@ console.log(document);
 const title = document.getElementById("title");
 console.log(title);
 title.innerHTML = "Change the text of the id = title";
-<<<<<<< HEAD
 // 주석 지워서 실행
 title.style.color = "rgb(239, 236, 229)";
-
-=======
-title.style.color = "pink";
->>>>>>> master
 
 console.dir(document);
 
@@ -153,13 +148,8 @@ window.addEventListener("resize", handleResize);
 function handleClick() {
 	title.style.color = "red";
 }
-<<<<<<< HEAD
 //주석 지워서 실행
 // title.addEventListener("click", handleClick);
-=======
-
-title.addEventListener("click", handleClick);
->>>>>>> master
 
 /* 조건문 */
 // 조건문 구조
@@ -228,7 +218,6 @@ if(age >= 19 && age <= 21){
 	console.log("too young so you can not drink")
 }
 
-<<<<<<< HEAD
 /* DOM If else Function practice */
 const idTitle = document.querySelector("#title");
 
@@ -291,7 +280,3 @@ function init_ver02(){
 }
 
 init_ver02();
-=======
-// 2-6 
-
->>>>>>> master
